@@ -15,7 +15,7 @@ where t is 0 or 1. (Consider when actual z is close to t, E tends to 0)
 * Gaussian Distribution: normal distribution where the sum of all values is equal to 1.
     * $P(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-\frac{1}{2\sigma^2}(x-\mu)^2}$
 
-* **Maximum Likelihood** states that you should choose a hypothesis $h \in H$ such that it maximises the likelihood that the data D is generated under that hypothesis, e.g. $h_ML = argmax_{h\in H}P(D|h)$
+* **Maximum Likelihood** states that you should choose a hypothesis $h \in H$ such that it maximises the likelihood that the data D is generated under that hypothesis, e.g. {% raw %}$h_ML = argmax_{h\in H}P(D|h)${% endraw %}
 
 For least squares:
 
@@ -25,11 +25,11 @@ For cross entropy:
 
 ![https://www.cse.unsw.edu.au/~cs9444/18s2/lect/1page/04_Variations.pdf](maxlikely_crossentropy.png)
 
-* Bayes rule: probability of A given B: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$
+* Bayes rule: probability of A given B: {% raw %}$P(A|B) = \frac{P(B|A)P(A)}{P(B)}${% endraw %}
 * In machine learning:
-    * $P(D|h)$ = the probability of data D being generated under hypothesis h in all hypotheses
-    * $P(h|D)$ = the probability of hypothesis h is correct, given the data D was observed
-    * $P(h)$ is called the prior
+    * {% raw %}$P(D|h)${% endraw %} = the probability of data D being generated under hypothesis h in all hypotheses
+    * {% raw %}$P(h|D)${% endraw %} = the probability of hypothesis h is correct, given the data D was observed
+    * {% raw %}$P(h)${% endraw %} is called the prior
 
 ## Weight decay
 * Small weights are more likely to occur than large weights
