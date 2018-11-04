@@ -1,3 +1,4 @@
+# Variations on Backprop
 ## Cross entropy
 
 Problem: Least squares error function is unsuitable for classification, where target $t = 0\space or\space 1$
