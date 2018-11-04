@@ -40,6 +40,6 @@ For every input adjust the weights:
 Where $\eta$ is the learning rate, $y$ is the correct output and $g(x)$ is the output of the network. 
 
 ## Good Resources
-* https://www.computing.dcu.ie/~humphrys/Notes/Neural/single.neural.html - General notes on perceptrons
-* https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15381-f01/www/schedule.html - better slides
-* http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/ - what activation functions allow us to do
+* [https://www.computing.dcu.ie/~humphrys/Notes/Neural/single.neural.html](https://www.computing.dcu.ie/~humphrys/Notes/Neural/single.neural.html) - General notes on perceptrons
+* [https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15381-f01/www/schedule.html](https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15381-f01/www/schedule.html) - better slides
+* [http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/) - what activation functions allow us to do

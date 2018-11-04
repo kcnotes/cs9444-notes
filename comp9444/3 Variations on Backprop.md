@@ -27,9 +27,9 @@ For cross entropy:
 
 * Bayes rule: probability of A given B: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$
 * In machine learning:
-    * P(D|h) = the probability of data D being generated under hypothesis h in all hypotheses
-    * P(h|D) = the probability of hypothesis h is correct, given the data D was observed
-    * P(h) is called the prior
+    * $P(D|h)$ = the probability of data D being generated under hypothesis h in all hypotheses
+    * $P(h|D)$ = the probability of hypothesis h is correct, given the data D was observed
+    * $P(h)$ is called the prior
 
 ## Weight decay
 * Small weights are more likely to occur than large weights
@@ -41,7 +41,7 @@ $E = \frac{1}{2} \sum_i(z_i-t_i)^2 + \frac{\lambda}{2} \sum_j w_j^2$
 
 $w\leftarrow w - \eta \frac{\delta E}{\delta w} - \eta \lambda w$
 
-* https://stats.stackexchange.com/questions/29130/difference-between-neural-net-weight-decay-and-learning-rate
+* [https://stats.stackexchange.com/questions/29130/difference-between-neural-net-weight-decay-and-learning-rate](https://stats.stackexchange.com/questions/29130/difference-between-neural-net-weight-decay-and-learning-rate)
 
 ## Momentum
 * Weights tend to oscillate without much improvement. Add a momentum factor before calculating the actual weights.

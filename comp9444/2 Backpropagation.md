@@ -79,5 +79,5 @@ $\frac{\delta E}{\delta z} = (z-t)$. Using the cost gradient of one sample inste
 * Financial prediction
 
 ## Resources 
-* http://colah.github.io/posts/2015-08-Backprop/ - The maths and reason behind backpropogation
-* https://webcache.googleusercontent.com/search?q=cache:6uU5c-WPZJIJ:https://towardsdatascience.com/difference-between-batch-gradient-descent-and-stochastic-gradient-descent-1187f1291aa1+&cd=1&hl=en&ct=clnk&gl=au - How stochastic gradient descent works
+* [http://colah.github.io/posts/2015-08-Backprop/](http://colah.github.io/posts/2015-08-Backprop/) - The maths and reason behind backpropogation
+* [https://towardsdatascience.com/difference-between-batch-gradient-descent-and-stochastic-gradient-descent-1187f1291aa1+](https://webcache.googleusercontent.com/search?q=cache:6uU5c-WPZJIJ:https://towardsdatascience.com/difference-between-batch-gradient-descent-and-stochastic-gradient-descent-1187f1291aa1+&cd=1&hl=en&ct=clnk&gl=au )- How stochastic gradient descent works
