@@ -14,7 +14,7 @@ where t is 0 or 1. (Consider when actual z is close to t, E tends to 0)
 ### Softmax Error
 $P(i) = \frac{e(z_i)}{\sum_{j=1}^N e(z_j)}$
 
-$E = log P(i) = -(z_i - log \sum_j exp(z_j))$, where i is the correct class
+$E = -log P(i) = -(z_i - log \sum_j exp(z_j))$, where i is the correct class
 
 Decrease $z_i$ if it's the correct class, $log$ pushes up if it's similar
 

@@ -37,7 +37,7 @@ For N-2-N:
 * [https://www.cs.cmu.edu/~dst/pubs/byte-hiddenlayer-1989.pdf](https://www.cs.cmu.edu/~dst/pubs/byte-hiddenlayer-1989.pdf)
 
 ## Vanishing and Exploding Gradients
-* When weights are too small, differentials become smaller as you backpropogate through the layers
+* When weights are too small, differentials become smaller as you backpropogate through the layers (exponentially, due to chain rule)
 * When weights are too large, activations in higher layers saturate to extreme values - gradients also become very small
 * Weights with intermediate values - differentials sometimes gets multiplied many times where the transfer function is steep - blow up
 * Solved by:
@@ -47,3 +47,11 @@ For N-2-N:
     * New activation functions
 
 ## Dropout
+* [Medium article](https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5)
+* **Drop out/ignore hidden and visible units** in a neural network during training, when doing a forward/backward pass.
+    * Nodes are dropped out with a probability 1-p.
+    * After training, activations are multiplied by this probability - so activation is the average value of what it would have received.
+* **Redundancy** - when features are missing
+* **Simulates ensembling** - different classifiers trained on same task for more diversity
+    * Diversity also achieved by training different subsets of data with replacement - some not chosen, some chosen multiple times
+    * In dropout, this happens because it is **different architecture** (units) and then later averaged over all different models
