@@ -13,4 +13,6 @@
 13. Adversarial Training and GANs
 
 Useful links
-http://cs230.stanford.edu/syllabus.html
+
+* [http://cs230.stanford.edu/syllabus.html](http://cs230.stanford.edu/syllabus.html)
+* [https://www.willamette.edu/~gorr/classes/cs449/intro.html](https://www.willamette.edu/~gorr/classes/cs449/intro.html)
