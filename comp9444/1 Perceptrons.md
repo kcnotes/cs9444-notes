@@ -1,7 +1,3 @@
----
-layout: page
-published: false
----
 # Perceptrons
 ## Neural Networks Introduction
 * Input edges with weights

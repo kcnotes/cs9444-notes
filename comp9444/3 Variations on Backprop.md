@@ -1,7 +1,3 @@
----
-layout: page
-published: false
----
 # Variations on Backprop
 ## Cross entropy
 

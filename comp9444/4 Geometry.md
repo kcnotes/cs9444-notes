@@ -1,7 +1,3 @@
----
-layout: page
-published: false
----
 # Geometry
 ## Encoder Networks
 * Visualising hidden unit dynamics

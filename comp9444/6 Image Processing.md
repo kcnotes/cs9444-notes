@@ -1,7 +1,3 @@
----
-layout: page
-published: false
----
 # Image Processing
 ## Image Datasets and Tasks
 * Various datasets: 
