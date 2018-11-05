@@ -21,6 +21,8 @@
         * $g(x)=1$ if $x \geq 0$
         * $g(x)=0$ otherwise
 
+![Activations](activations.png)
+
 ## Perceptrons
 * Perceptrons have two layers - input and output (single layer - one layer of links)
 * Activation function is the discontinuous step function
