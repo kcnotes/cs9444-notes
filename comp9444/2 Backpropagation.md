@@ -1,3 +1,7 @@
+---
+layout: page
+published: false
+---
 # Backpropogation
 ## Supervised Learning
 * Three types of learning:

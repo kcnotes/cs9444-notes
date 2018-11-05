@@ -1,3 +1,7 @@
+---
+layout: page
+published: false
+---
 # Convolutional Networks
 ## Layers
 * **Convolution layers**: extract shift-invariant features from the previous layer
