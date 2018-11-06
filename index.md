@@ -4,7 +4,7 @@
 4. [Geometry](comp9444/4%20Geometry.html)
 5. [Convolutional Networks](comp9444/5%20Convolutional%20Networks.html)
 6. [Image Processing](comp9444/6%20Image%20Processing.html)
-7. Recurrent Networks
+7. [Recurrent Networks](comp9444/7%20Recurrent%20Networks.html)
 8. Language Processing
 9. Reinforcement Learning
 10. Deep Reinforcement Learning
