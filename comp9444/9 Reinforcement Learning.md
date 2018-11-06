@@ -66,8 +66,34 @@ $V^*(s)=R(s,a)+\gamma V^*(\delta(s,a))$
 * [TD Learning and backprop ](https://web.stanford.edu/group/pdplab/pdphandbook/handbookch10.html)
 
 ## Policy Learning
+* Attempt to optimise the policy $\pi_\theta : S\rightarrow A$ directly, with parameters $\theta$
+    * We consider the **fitness of a policy** as the value function of initial state under that policy
 
+$fitness(\pi_\theta) = V^{\pi_\theta}(s_0)=E_{\pi_\theta}(r_{total})$
 
-### Evolution Strategies
+### Evolution Strategy
+* **Hill climbing**
+    1. Initialise a 'champ' policy $\theta_{champ} = 0$
+    2. For each trial, generate a mutant policy $\theta_{mutant} = \theta_{champ} + Gaussian\space noise$
+    3. Evaluate both on same task, if mutant is better then $\theta_{champ}\leftarrow (1-\alpha)\theta_{champ} + \alpha\theta_{mutant}$
 ### Policy Gradients
+* Use **gradient ascent** instead of random updates. For episodic:
+    * After a sequence of actions, we receive a total reward - distribute reward to each action equally
+    * If total reward is high, we change parameters to make agent more likely to take those actions in similar situations, e.g. we want to increase the total reward: $log\prod_{t=1}^m \pi_\theta (a_t|s_t)$
+    * This is the REINFORCE algorithm:
+
+![](reinforce.png)
+
+* For non-episodic, rewards are received incrementally throughout the game - policy is a probability distribution
+
+![](non-episodic_policy.png)
+
 ## Actor-Critic
+* For the above fitness gradient, it is hard to estimate the Q value. **Actor-Critic**:
+* Critic NN measures how good the action taken is (value-based)
+    * Have a family of Q functions and learn different parameters to approximate $Q^{\pi_\theta}$
+* Actor NN controls how our agent behaves (policy-based)
+    * At the same time as approximating $Q^{\pi_\theta}$, we are learning the best policy
+* Instead of updating eery episode in REINFORCE, we update every step (e.g. like in TD Learning)
+
+![](actor-critic.png)
