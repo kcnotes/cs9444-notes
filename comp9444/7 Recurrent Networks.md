@@ -13,7 +13,7 @@
 
 ## Simple recurrent network
 * Simple recurrent network
-    * At each time step, hidden layer activations copied to a 'context' layer
+    * At each time step, hidden layer activations copied to a **'context' layer**
     * Hidden layer receives connections from input and context layers
     * Context layer retains state information for indefinite period of time
 * Backpropogation is done through time - recurrent 
@@ -46,4 +46,7 @@ Chomsky Hierarchy:
 ## Long Range Dependencies
 * Long Short Term Memory (LSTM)
     * [colah's blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+
+![](lstm.png)
+
 * Gated Recurrent Units (GRU)
