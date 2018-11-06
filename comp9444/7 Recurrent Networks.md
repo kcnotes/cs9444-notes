@@ -50,3 +50,5 @@ Chomsky Hierarchy:
 ![](lstm.png)
 
 * Gated Recurrent Units (GRU)
+
+![](gru.png)
