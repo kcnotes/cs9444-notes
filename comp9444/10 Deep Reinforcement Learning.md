@@ -35,7 +35,7 @@
 * **Evolutional Strategy**: take top 20% of samples and fit a new distribution with new $\sigma$
 
 ### Variational Inference
-* KL Divergence, $D_{KL}(q||p)$ is a measure of how much "evidence" each sample will on average bring when you're trying to distinguish p(x) from q(x). If p(x) and q(x) are very different, they are not good representations of each other, value is larger.
+* KL Divergence, $D_{KL}(q\|\|p)$ is a measure of how much "evidence" each sample will on average bring when you're trying to distinguish p(x) from q(x). If p(x) and q(x) are very different, they are not good representations of each other, value is larger.
 * **Variational Inference**: Aim to minimise the divergence between $q(\theta)$ and $p_T(\theta)$, where:
     * $p_T(\theta) = e^{\frac{1}{T}F(\theta)}/Z$, a Boltzmann distribution of fitness, T the temerature, Z the normalizing constant
     * $q(\theta)$ is the Gaussian distribution determined by the selected $\eta,\sigma$
