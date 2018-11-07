@@ -8,7 +8,7 @@
 8. [Language Processing](comp9444/8%20Language%20Processing.html)
 9. [Reinforcement Learning](comp9444/9%20Reinforcement%20Learning.html)
 10. [Deep Reinforcement Learning](comp9444/10%20Deep%20Reinforcement%20Learning.html)
-11. Boltzmann Machines
+11. [Boltzmann Machines](comp9444/11%20Boltzmann%20Machines.html)
 12. Autoencoders
 13. Adversarial Training and GANs
 
