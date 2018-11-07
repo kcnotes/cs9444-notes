@@ -37,11 +37,11 @@
 ### Cost function
 * Probability that the word j is occurring in the context of the word k:
 
-$prob(word_j|word_k) = \frac{exp(u_j)}{\sum_{j'=1}^V\space exp(u_{j'})}=\frac{exp({v'}_j^Tv_k)}{\sum_{j'=1}^V\space exp({v'}_{j'}^Tv_k)}$
+$prob(word_j\|word_k) = \frac{exp(u_j)}{\sum_{j'=1}^V\space exp(u_{j'})}=\frac{exp({v'}_j^Tv_k)}{\sum_{j'=1}^V\space exp({v'}_{j'}^Tv_k)}$
 
 * Cost is the log of this. We want to maximise:
 
-$1/T\sum_{t=1}^T\sum_{c}log prob(w_{t+r}|w_t)$
+$1/T\sum_{t=1}^T\sum_{c}log prob(w_{t+r}\|w_t)$
 
 ### Extensions for word2vec
 * Continuous Bag of Words
