@@ -50,8 +50,8 @@ end
     * **softmax** assumes Boltzmann distribution
 
 ## Stochastic Encoders and Decoders
-* Decoder is a conditional proability distribution $p_\theta(x\|z) of output x$
-* Encoder is a conditional proability distribution $q_\theta(z\|x) of values z$
+* Decoder is a conditional proability distribution $p_\theta(x\|z)$ of output x
+* Encoder is a conditional proability distribution $q_\theta(z\|x)$ of values z
 * This is what we saw in RBM
 
 ## Generative Models
