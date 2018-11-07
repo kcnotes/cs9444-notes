@@ -63,7 +63,7 @@ $p(x) = \frac{e^{-E(x)/T}}{Z}$
 
 ![](rbm_prob.png)
 
-* **Alternating Gibbs Sampling**: Choose v0 randomly, sample h0 from p(h|v0), sample v1 from p(v|h0), etc. This is called 'dreaming'
+* **Alternating Gibbs Sampling**: Choose v0 randomly, sample h0 from p(h\|v0), sample v1 from p(v\|h0), etc. This is called 'dreaming'
 
 ### Training RBM
 * **Contrastive Divergence**: Train by comparing real and fake images, prioritise the real ones

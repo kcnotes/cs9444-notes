@@ -22,14 +22,14 @@ $E = L(x, g(f(x)))$
 * Add a penalty term based on the hidden unit activation - recall weight decay
 * Instead of resizing weights, resize the hidden unit activations
 
-$E = L(x, g(f(x))) + \lambda \sum_i|h_i|$
+$E = L(x, g(f(x))) + \lambda \sum_i\|h_i\|$
 
 * This is L1 regularisation - absolute value rather than square - encourages some hidden units to go to 0, hence why it's 'sparse' - features are present or absent
 
 ### Contractive autoencoders
 * Take derivative of hidden units and use L2 norm
 
-$E = L(x, g(f(x))) + \lambda \sum_i||\triangledown_x h_i||^2$
+$E = L(x, g(f(x))) + \lambda \sum_i\|\|\triangledown_x h_i\|\|^2$
 
 * Forced to learn hidden features that don't change much - small change in input is mapped to a very close point in the HU space
 
@@ -50,8 +50,8 @@ end
     * **softmax** assumes Boltzmann distribution
 
 ## Stochastic Encoders and Decoders
-* Decoder is a conditional proability distribution $p_\theta(x|z) of output x$
-* Encoder is a conditional proability distribution $q_\theta(z|x) of values z$
+* Decoder is a conditional proability distribution $p_\theta(x\|z) of output x$
+* Encoder is a conditional proability distribution $q_\theta(z\|x) of values z$
 * This is what we saw in RBM
 
 ## Generative Models
