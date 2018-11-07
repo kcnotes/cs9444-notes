@@ -29,7 +29,7 @@ Each policy $\pi$ has a **value function** $V^\pi:S\rightarrow R$ where $V^\pi(s
 
 Average discounted reward - rewards arriving later in the future are worth less - controls how far the agent looks ahead when making predictions.
 
-The agent retains its own estimate of $V^*$, the maximum (expected) discounted reward. The aim is to start with a random V and improve it until it is close to V* (bootstrapping).
+The agent retains its own estimate of $V^\*$, the maximum (expected) discounted reward. The aim is to start with a random V and improve it until it is close to V\* (bootstrapping).
 
 ### Exploration vs. Exploitation
 * Either choose a random action or choose what we think is the best action
@@ -39,9 +39,9 @@ The agent retains its own estimate of $V^*$, the maximum (expected) discounted r
 $P(a) = \frac{e^{R(a)/T}}{\sum_{b\in A}e^{R(b)/T}}$
 
 ### TD-Learning
-* For the true value $V^*(s)$, it is equal to the immediate reward plus discounted value of the next state:
+* For the true value $V^\*(s)$, it is equal to the immediate reward plus discounted value of the next state:
 
-$V^*(s)=R(s,a)+\gamma V^*(\delta(s,a))$
+$V^\*(s)=R(s,a)+\gamma V^\*(\delta(s,a))$
 
 * For the estimated value, we want to learn - so incorporate the error and learning rate:
 
@@ -80,7 +80,7 @@ $fitness(\pi_\theta) = V^{\pi_\theta}(s_0)=E_{\pi_\theta}(r_{total})$
 ### Policy Gradients
 * Use **gradient ascent** instead of random updates. For episodic:
     * After a sequence of actions, we receive a total reward - distribute reward to each action equally
-    * If total reward is high, we change parameters to make agent more likely to take those actions in similar situations, e.g. we want to increase the total reward: $log\prod_{t=1}^m \pi_\theta (a_t|s_t)$
+    * If total reward is high, we change parameters to make agent more likely to take those actions in similar situations, e.g. we want to increase the total reward: $log\prod_{t=1}^m \pi_\theta (a_t\|s_t)$
     * This is the REINFORCE algorithm:
 
 ![](reinforce.png)
