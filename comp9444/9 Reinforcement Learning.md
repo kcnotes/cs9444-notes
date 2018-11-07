@@ -13,11 +13,11 @@
 
 ## Models of Optimality
 
-| Reward | Cumulative reward | Comment |
-|--------|-------------------|---------|
-| Finite horizon reward | $\sum_{i=0}^{h-1} r_{t+i}$ | Simple computationally |
-| Infinite discounted reward | $\sum_{i=0}^\infty\gamma^ir_{t+i}$ | Easier for proving theorems |
-| Average reward | $lim_{h\rightarrow \infty}\frac{1}{h}\sum_{i=0}^{h-1}r_{t+i}$ | Cannot sensibly choose between small reward soon and large reward later |
+| Reward                     | Cumulative reward                                             | Comment                                                                 |
+|----------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------|
+| Finite horizon reward      | $\sum_{i=0}^{h-1} r_{t+i}$                                    | Simple computationally                                                  |
+| Infinite discounted reward | $\sum_{i=0}^\infty\gamma^ir_{t+i}$                            | Easier for proving theorems                                             |
+| Average reward             | $lim_{h\rightarrow \infty}\frac{1}{h}\sum_{i=0}^{h-1}r_{t+i}$ | Cannot sensibly choose between small reward soon and large reward later |
 
 * Various ways of learning, based on:
     * Value Function Learning, e.g. TD-, Q-Learning
