@@ -7,7 +7,7 @@
 7. [Recurrent Networks](comp9444/7%20Recurrent%20Networks.html)
 8. [Language Processing](comp9444/8%20Language%20Processing.html)
 9. [Reinforcement Learning](comp9444/9%20Reinforcement%20Learning.html)
-10. Deep Reinforcement Learning
+10. [Deep Reinforcement Learning](comp9444/10%20Deep%20Reinforcement%20Learning.html)
 11. Boltzmann Machines
 12. Autoencoders
 13. Adversarial Training and GANs
