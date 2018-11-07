@@ -37,7 +37,7 @@
 ### Cost function
 * Probability that the word j is occurring in the context of the word k:
 
-$prob(word_j\|word_k) = \frac{exp(u_j)}{\sum_{j'=1}^V\space exp(u_{j'})}=\frac{exp({v'}_j^Tv_k)}{\sum_{j'=1}^V\space exp({v'}_{j'}^Tv_k)}$
+$prob(word_j\|word_k) = \frac{exp(u_j)}{\sum_{j'=1}^V\space exp(u_{j'})}=\frac{exp({v'}\_j^Tv\_k)}{\sum\_{j'=1}^V\space exp({v'}\_{j'}^Tv\_k)}$
 
 * Cost is the log of this. We want to maximise:
 
