@@ -12,6 +12,7 @@
 * $\delta, R, \pi$ can be multi-valued with random element (e.g. can be treated as probability distributions)
 
 ## Models of Optimality
+
 | Reward | Cumulative reward | Comment |
 |--------|-------------------|---------|
 | Finite horizon reward | $\sum_{i=0}^{h-1} r_{t+i}$ | Simple computationally |
